@@ -1,0 +1,79 @@
+/* Мобильная адаптация sli.komi.com: одна колонка, крупный текст.
+   Правь этот файл, чтобы подстроить вид под сайт. */
+
+html, body {
+  width: 100% !important;
+  min-width: 0 !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow-x: hidden !important;
+  -webkit-text-size-adjust: 100% !important;
+}
+
+body {
+  padding: 0 14px 24px !important;
+  font-size: 17px !important;
+  line-height: 1.55 !important;
+}
+
+/* Сломать колонки и таблицы вёрстки в одну колонку */
+div, table, thead, tbody, tfoot, tr, td, th, section, aside, nav, header, footer, form, fieldset {
+  float: none !important;
+  position: static !important;
+  width: auto !important;
+  min-width: 0 !important;
+  max-width: 100% !important;
+  height: auto !important;
+  box-sizing: border-box !important;
+}
+
+table, thead, tbody, tfoot, tr, td, th {
+  display: block !important;
+}
+
+td, th {
+  padding: 4px 0 !important;
+}
+
+/* Крупные удобные ссылки и текст */
+a, p, li, span, td, th {
+  font-size: inherit !important;
+  line-height: inherit !important;
+}
+
+a {
+  word-break: break-word !important;
+}
+
+ul, ol {
+  padding-left: 20px !important;
+}
+
+li {
+  margin: 6px 0 !important;
+}
+
+h1, h2, h3 {
+  font-size: 1.3em !important;
+  line-height: 1.3 !important;
+  margin: 18px 0 8px !important;
+}
+
+/* Картинки и вставки не шире экрана */
+img, video, iframe, embed, object, canvas, svg {
+  max-width: 100% !important;
+  height: auto !important;
+}
+
+/* Поля ввода под палец */
+input, select, textarea, button {
+  max-width: 100% !important;
+  font-size: 16px !important;
+  min-height: 40px !important;
+}
+
+pre, code {
+  white-space: pre-wrap !important;
+  word-break: break-word !important;
+}
